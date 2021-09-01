@@ -1,11 +1,14 @@
 body{
-    text-align: center;
+   text-align: center;
     margin: 0;
+    padding: 0;
+    
 }
 h1{
     background-color: #FFB830;
     height: 5rem;
     margin: 0;
+  
     
 }
 
@@ -14,7 +17,39 @@ textarea{
     height: 8rem;
     display: block;
     margin: 1rem auto;
-    text-align: center;
+    
     padding: 1rem;
     
+}
+#btn-translate{
+    min-width: 150px;
+    height: 3rem;
+    background-color: #FFB830;
+    margin: 1rem 0;
+    padding: .5rem;
+    
+}
+.trans{
+    text-align: center;
+    margin: .5rem 25rem;
+    font-size: larger;
+
+display: block;
+    
+}
+
+#output{
+    border: 1px solid black;
+    width: 40%;
+    height: 15vh;
+    display: block
+    
+    
+}
+footer{
+    background-color: #FFB830;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    display: block;
+    justify-content: center;
 }
