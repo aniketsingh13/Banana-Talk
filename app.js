@@ -1,11 +1,14 @@
 var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
-var txtOutput = document.querySelector("#txt-output");
+var outputDiv = document.querySelector("#output");
 
-var serverUrl = "https://api.funtranslations.com/translate/minion.json"
+var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
-function getTranslationUrl(input) {
-    return serverUrl + "?" + "text=" + input
+
+
+
+function getTranslationUrl(text) {
+    return serverURL  + "?" + "text=" + text ;
 }
 
 function errorHandler(error) {
@@ -14,11 +17,11 @@ function errorHandler(error) {
 
 function clickHandler() {
     var inputText = txtInput.Value;
-    fetch(getTranslationUrl(inputText))
+    fetch (getTranslationUrl(inputText))
         .then(response => response.json())
         .then(json => {
             var translatedText = json.contents.translated;
-            txtOutput.innerText = translatedText;
+            outputDiv.innerText = translatedText;
         })
         .catch(errorHandler)
 }

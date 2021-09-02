@@ -41,12 +41,18 @@ textarea {
     display: block;
 
 }
+div {
+margin: auto;
+}
 
 #output {
     border: 1px solid black;
-    width: 40%;
-    height: 15vh;
-    display: block
+    display: block;
+ width: 40%;
+    height: 20vh;
+    
+    
+
 }
 
 footer {
