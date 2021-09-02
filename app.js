@@ -8,7 +8,7 @@ var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 
 function getTranslationURL(text) {
-    return serverURL  + "?" + "text=" + text ;
+    return serverURL + "?" + "text=" + text;
 }
 
 function errorHandler(error) {
@@ -17,7 +17,7 @@ function errorHandler(error) {
 
 function clickHandler() {
     var inputText = txtInput.Value;
-    fetch (getTranslationURL(inputText))
+    fetch(getTranslationURL(inputText))
         .then(response => response.json())
         .then(json => {
             var translatedText = json.contents.translated;
